@@ -139,6 +139,7 @@ export const initialElements = [];
 // initialElements.push(customNode);
 // console.log(initialElements);
 
+
 // create a node constructor func:
 function NewNode(id, type, label, position, parentId, data) {
   this.id = id;
@@ -220,16 +221,12 @@ function createNodesAndEdges(tree) {
       initialElements.push(newEdge);
     }
     // console.log("Initial Elements:", initialElements);
+    // nodeQ = [rootNode, child1, child2a, child2b];
+    // xQ = [250, 250, 150, 350];
+    // yQ = [0, 100, 200, 200];
   }
 }
 
-// nodeQ = [rootNode, child1, child2a, child2b];
-// xQ = [250, 250, 150, 350];
-// yQ = [0, 100, 200, 200];
+
 
 createNodesAndEdges(tree);
-
-// TO DO: FIX NODES RENDERING ON TOP OF EACH OTHER (GRANDBABY ONE AND TWO)!!!!!!!!!!!!!!!!
-// the number of child nodes must trigger a re-assignment of parent sibling nodes - this means they should not be held in a queue but probably an object?  How do I do this without lots of iterating?????
-
-// Can create a horizontal button!!!

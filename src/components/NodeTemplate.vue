@@ -1,15 +1,12 @@
 <script setup>
   import { Handle, Position } from '@vue-flow/core'
   // import { customNode } from './elements'
-  // somehow I need to get access to stateful variables and dynamically create p tags for each one.  See CustomNode.vue and presets.js at https://vueflow.dev/examples/nodes/ 'Custom Node'
-
-  // I think the flow of data goes: presets.js --> CustomNode.vue --> App.vue
 
   const props = defineProps({
-  data: {
-    type: Object,
-  },
-})
+    data: {
+      type: Object,
+    },
+  })
 
   let oneway, twoway;
   // if (customNode.data.oneway) {oneway = customNode.data.oneway;}

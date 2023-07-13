@@ -217,6 +217,8 @@ function resetTransform() {
 function toggleClass() {
   return (dark.value = !dark.value);
 }
+
+
 </script>
 
 <template>
